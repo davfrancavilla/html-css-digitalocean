@@ -1,0 +1,37 @@
+.collapse .navbar-nav li a{
+    color: #031c4e;
+}
+
+.my_toggle {
+    border: none;
+}
+
+.navbar-default .navbar-header .my_toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .my_toggle .icon-bar {
+    background-color: #3a8aff;
+}
+
+nav img {
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my_brand {
+    padding: 0 15px;
+}
+
+#my_button {
+    padding: 5px 10px;
+    margin: 10px 0;
+    position: relative;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    border-radius: 5px;
+    color: #006aff;
+    border: 1px solid #006aff;
+    background-color: white;
+}
