@@ -5,48 +5,548 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DigitalOcean</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="my_toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a id="my_link" class="navbar-brand my_brand" href="#">
-                    <img src="https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format" alt="">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="#">Curstomers</a></li>
-                    <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Docs <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Login</a></li>
-                    <button id="my_button" type="button" name="button">
-                        Sign Up
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="my_toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
-                </ul>
-            </div><!-- /.navbar-collapse -->
+                    <a id="my_link" class="visible-lg navbar-brand my_brand" href="#">
+                        <img src="https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format" alt="">
+                    </a>
+                    <a id="my_link" class="hidden-lg navbar-brand my_brand" href="#">
+                        <img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Curstomers</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <button class="white_btn" id="my_button" type="button" name="button">
+                            Sign Up
+                        </button>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
         </div><!-- /.container-fluid -->
     </nav>
+    <!-- JUMBOTRON BLUE -->
+    <section class="blue">
+        <div class="container">
+            <div class="row my_jumbotron">
+                <!-- TESTO JUMBOTRON -->
+                <div class="col-xs-12 col-md-7 text_section">
+                    <div class="relative_container">
+                        <div class="absolute_container">
+                            <h1 class="my_bold">Welcome to the developer cloud</h1>
+                            <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FORM -->
+                <div class="col-xs-offset-0 col-xs-12 col-md-offset-0 col-md-5">
+                    <div class="form_section">
+                        <div class="form_title">
+                            <h3 class="my_bold">Deploy in seconds</h3>
+                        </div>
+                        <form class="form-horizontal my_form">
+                            <div class="form_container">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="my_bold btn btn-default btn-block form_button blue_btn">Sign up with email</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <div class="col-xs-9 col-sm-9 google_button">
+                                        <button type="submit" class="my_bold btn btn-default btn-block form_button white_btn">
+                                            <i class="fab fa-google"></i> Sign up with Google
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-3 col-sm-3">
+                                        <button type="submit" class="btn btn-default btn-block form_button white_btn ">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>By signing up you agree to the <a href="#">Terms of Service</a>.</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SEZIONE GRIGIA CON LOGHI -->
+    <section class="first_gray gray">
+        <div class="container">
+            <div class="row">
+                <h4>Innovative businesses trust DigitalOcean</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-lg-2">
+                    <img src="https://images.prismic.io/www-static/591cf605-46aa-4a7b-8af5-90036c252c97_docker-bab60eeb.svg?auto=compress,format" alt="">
+                </div>
+                <div class="col-sm-4 col-lg-2">
+                    <img src="https://images.prismic.io/www-static/da244a8e-2546-47b1-aae2-b9824c657708_gitlab-166e2067.svg?auto=compress,format" alt="">
+                </div>
+                <div class="col-sm-4 col-lg-2">
+                    <img src="https://images.prismic.io/www-static/b3f152c0-5465-45ba-80ab-2cdd258e6bee_slack-e20293da.svg?auto=compress,format" alt="">
+                </div>
+                <div class="col-sm-4 col-lg-2">
+                    <img src="https://images.prismic.io/www-static/9351f07e-afbc-439a-a75f-3eca82be9c0e_hashicorp-4431df79.svg?auto=compress,format" alt="">
+                </div>
+                <div class="col-sm-4 col-lg-2">
+                    <img src="https://images.prismic.io/www-static/01ff74d1-79dd-4f18-888f-4a93a976e61d_wework-be6eab32.svg?auto=compress,format" alt="">
+                </div>
+                <div class="col-sm-4 col-lg-2">
+                    <img src="https://images.prismic.io/www-static/1583c145-22f8-402c-96f8-3af919a0df25_splunklogo.svg?auto=compress,format" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <a href="#">See business solutions <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SEZIONE BIANCA -->
+    <section class="first_white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-8 text-center">
+                    <h2>Deploy and scale seamlessly</h2>
+                    <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 my_list">
+                    <div class="mobile_view clearfix">
+                        <ul class="">
+                            <li><a href="#">Deploy</a></li>
+                            <li><a href="#">Scale</a></li>
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">Secure</a></li>
+                            <li><a href="#">Monitor</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://images.prismic.io/www-static/16ae92b4-6939-446c-b6a3-0ffec01cdc14_kublogoicon.svg?auto=compress,format" alt="">
+                            <h5>Kubernetes in minutes</h5>
+                            <p>Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="https://images.prismic.io/www-static/9d343e9c-fe74-4979-8ad9-e8efc58d6ee7_dropletinboxicon.svg?auto=compress,format" alt="">
+                            <h5>Flexible compute types</h5>
+                            <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://images.prismic.io/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg?auto=compress,format" alt="">
+                            <h5>1-Click App Marketplace</h5>
+                            <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="https://images.prismic.io/www-static/0eee6655-dfce-46b2-ab48-f40ff27d8a73_globeicon.svg?auto=compress,format" alt="">
+                            <h5>Global availability</h5>
+                            <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SEZIONE GRIGIA CON CAROSELLO -->
+    <section class="second_gray gray">
+        <div class="container">
+            <div class="row">
+                <h2>Designed for developers</h2>
+                <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-1 arrow">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="col-md-8">
+                    <img class="img-responsive" src="https://images.prismic.io/www-static/ba01040c-a47a-43c9-995d-4ed05a5dc4c9_screenshot-create-kubernetes-cluster-4a930955.jpg?auto=compress,format" alt="">
+                </div>
+                <div class="col-md-1 arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="row circles">
+                <div class="col-md-offset-5 col-md-2">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SEZIONE BIANCA CON SCHEDE -->
+    <section class="second_white">
+        <div class="container">
+            <div class="row text-center">
+                <h2>Built for business</h2>
+            </div>
+            <div class="row cards">
+                <div class="col-sm-3 card">
+                    <img src="https://images.prismic.io/www-static/7531f96f-5414-42c2-ba65-0d705769c62f_icon-check-shield.svg?auto=compress,format" alt="">
+                    <h5>Reliable platform</h5>
+                    <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+                    <a href="#">Security <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="col-sm-3 card">
+                    <img src="https://images.prismic.io/www-static/4083b409-5e65-4403-86a8-7ed8f501a0d8_icon-task-list-multiple.svg?auto=compress,format" alt="">
+                    <h5>Predictable pricing</h5>
+                    <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+                    <a href="#">Pricing <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="col-sm-3 card">
+                    <img src="https://images.prismic.io/www-static/fccb0e1b-4de3-4b58-9f3e-5455f5c3aeae_icon-headphones-customer-support-human.svg?auto=compress,format" alt="">
+                    <h5>World-class service</h5>
+                    <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
+                    <a href="#">Support <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="col-sm-3 card">
+                    <img src="https://images.prismic.io/www-static/1c791b14-833f-4190-a865-a55e11055fc0_icon-certified-certificate.svg?auto=compress,format" alt="">
+                    <h5>Security and compliance</h5>
+                    <p>Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
+                    <a href="#">Compliance <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SEZIONE BLUE CON MAPPA -->
+    <section class="world_map">
+        <div class="container">
+            <img class="world_layer" src="https://images.prismic.io/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg?auto=compress,format" alt="">
+            <div class="row text-center title_section">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <h2>Service your customers around the world from 13 data centers.</h2>
+                    <p>Run your infrastructure near your customers. Industry-low <a href="#">bandwidth pricing</a>, with generous quotas and add-on transfer at just $.01/GiB, makes DigitalOcean perfect for network-heavy apps like VPN and video.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10">
+                    <div class="row">
+                        <div class="col-md-5 cell">
+                            <div class="sigla">
+                                AMS2
+                            </div>
+                            <div class="city">
+                                Amsterdam, Netherlands
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-5 cell">
+                            <div class="sigla">
+                                AMS3
+                            </div>
+                            <div class="city">
+                                Amsterdam, Netherlands
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 cell">
+                            <div class="sigla">
+                                BLR1
+                            </div>
+                            <div class="city">
+                                Bangalore, India
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-5 cell">
+                            <div class="sigla">
+                                FRA1
+                            </div>
+                            <div class="city">
+                                Frankfurt, Germany
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 cell">
+                            <div class="sigla">
+                                LON1
+                            </div>
+                            <div class="city">
+                                London, UK
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-5 cell">
+                            <div class="sigla">
+                                NYC1
+                            </div>
+                            <div class="city">
+                                New York, NY
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 cell">
+                            <div class="sigla">
+                                NYC2
+                            </div>
+                            <div class="city">
+                                New York, NY
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-5 cell">
+                            <div class="sigla">
+                                NYC3
+                            </div>
+                            <div class="city">
+                                New York, NY
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 cell">
+                            <div class="sigla">
+                                SFO1
+                            </div>
+                            <div class="city">
+                                San Francisco, CA
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-5 cell">
+                            <div class="sigla">
+                                SFO2
+                            </div>
+                            <div class="city">
+                                San Francisco, CA
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 cell">
+                            <div class="sigla">
+                                SFO3
+                            </div>
+                            <div class="city">
+                                San Francisco, CA
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-5 cell">
+                            <div class="sigla">
+                                SGP1
+                            </div>
+                            <div class="city">
+                                Singapore
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 cell">
+                            <div class="sigla">
+                                TOR1
+                            </div>
+                            <div class="city">
+                                Toronto, Canada
+                            </div>
+                            <div class="link">
+                                <a class="text-right" href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--SEZIONE GRIGIA CON RECENSIONI -->
+    <section class="second_gray gray third_gray">
+        <div class="container">
+            <div class="row">
+                <h2>Designed for developers</h2>
+                <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-1 arrow">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="col-md-8">
+                    <div class="review_box text-center">
+                        <img class="img-responsive" src="https://images.prismic.io/www-static/16673e66-0c2f-417b-88bb-f02cc12b8fda_rockerbox-logo-51462da2.png?auto=compress,format" alt="">
+                        <h5><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAyMSAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggb3BhY2l0eT0iMC4yNSIgZD0iTTAuNjE5OTk1IDE2LjQ0QzAuNjE5OTk1IDEzLjU2IDAuNjQwNjk5IDExLjQ4IDAuNjgyMTA3IDEwLjJDMC43NjQ5MjMgNi43NiAxLjMwMzIyIDQuMjIgMi4yOTcwMSAyLjU4QzMuMjkwOCAwLjkgNS4wMjk5MyAwLjAzOTk5OTUgNy41MTQ0MSAwTDguNTA4MTkgMi43QzcuMTAwMzMgMi43OCA2LjE0Nzk1IDMuMyA1LjY1MTA1IDQuMjZDNS4xNTQxNiA1LjIyIDQuOTA1NzEgNi43MiA0LjkwNTcxIDguNzZIOC43NTY2NFYxNi40NEgwLjYxOTk5NVpNMTIuNDgzMyAxNi40NEMxMi40ODMzIDEzLjU2IDEyLjUwNDEgMTEuNDggMTIuNTQ1NSAxMC4yQzEyLjYyODMgNi43NiAxMy4xNjY2IDQuMjIgMTQuMTYwNCAyLjU4QzE1LjE1NDIgMC45IDE2Ljg5MzMgMC4wMzk5OTk1IDE5LjM3NzggMEwyMC4zNzE1IDIuN0MxOC45NjM3IDIuNzggMTguMDExMyAzLjMgMTcuNTE0NCA0LjI2QzE3LjAxNzUgNS4yMiAxNi43NjkxIDYuNzIgMTYuNzY5MSA4Ljc2SDIwLjYyVjE2LjQ0SDEyLjQ4MzNaIiBmaWxsPSIjMDMxQjRFIi8+Cjwvc3ZnPgo=" alt=""> We have been able to make scaling the technical infrastructure of our business cost effective and efficient. <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBvcGFjaXR5PSIwLjI1IiBkPSJNNy4wNTEwMyAwQzcuMDUxMDMgMS4wNTEwOSA3LjA0MzczIDEuODEwMjIgNy4wMjkxMyAyLjI3NzM3QzYuOTk5OTMgMy41MzI4NSA2LjgxMDE1IDQuNDU5ODUgNi40NTk3OCA1LjA1ODM5QzYuMTA5NDIgNS42NzE1MyA1LjQ5NjI4IDUuOTg1NCA0LjYyMDM3IDZMNC4yNyA1LjAxNDZDNC43NjYzNSA0Ljk4NTQgNS4xMDIxMiA0Ljc5NTYyIDUuMjc3MyA0LjQ0NTI2QzUuNDUyNDkgNC4wOTQ4OSA1LjU0MDA4IDMuNTQ3NDQgNS41NDAwOCAyLjgwMjkyTDQuMTgyNDEgMi44MDI5Mkw0LjE4MjQxIC0yLjUwNzgyZS0wN0w3LjA1MTAzIDBaTTIuODY4NTQgLTMuNjU2NDRlLTA3QzIuODY4NTQgMS4wNTEwOSAyLjg2MTI0IDEuODEwMjIgMi44NDY2NSAyLjI3NzM3QzIuODE3NDUgMy41MzI4NSAyLjYyNzY3IDQuNDU5ODUgMi4yNzczIDUuMDU4MzlDMS45MjY5NCA1LjY3MTUzIDEuMzEzOCA1Ljk4NTQgMC40Mzc4ODYgNkwwLjA4NzUyMjEgNS4wMTQ2QzAuNTgzODcyIDQuOTg1NCAwLjkxOTYzOCA0Ljc5NTYyIDEuMDk0ODIgNC40NDUyNkMxLjI3IDQuMDk0ODkgMS4zNTc2IDMuNTQ3NDQgMS4zNTc2IDIuODAyOTJMLTYuODg2MTllLTA1IDIuODAyOTJMLTYuODYxNjllLTA1IC02LjE2NDI2ZS0wN0wyLjg2ODU0IC0zLjY1NjQ0ZS0wN1oiIGZpbGw9IiMwMzFCNEUiLz4KPC9zdmc+Cg==" alt=""></h5>
+                        <p>Rick O'Toole</p>
+                        <p>Co-founder and CTO</p>
+                    </div>
+                </div>
+                <div class="col-md-1 arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="row circles">
+                <div class="col-md-offset-5 col-md-2">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SEZIONE BLUE GET STARTED NOW -->
+    <section id="get_started">
+        <div class="container">
+            <h2>Get started now</h2>
+            <button class="white_btn"type="button" name="button">Create yout account</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <ul class="col-md-offset-1 col-sm-offset-0 col-sm-6 col-md-2">
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Leadership</li>
+                    <li>Blog</li>
+                    <li>Carrers</li>
+                    <li>Partners</li>
+                    <li>Referral Program</li>
+                    <li>Press</li>
+                    <li>Legal</li>
+                    <li>Trust Platform</li>
+                </ul>
+                <ul class="col-sm-6 col-md-2">
+                    <li>Poducts</li>
+                    <li>Products Overview</li>
+                    <li>Droplets</li>
+                    <li>Kubernetes</li>
+                    <li>Managed Databases</li>
+                    <li>Spaces</li>
+                    <li>Marketplace</li>
+                    <li>Load Balancer</li>
+                    <li>Block Storage</li>
+                    <li>Tool & Integrations</li>
+                    <li>API</li>
+                    <li>Pricing</li>
+                    <li>Documentation</li>
+                    <li>Release Notes</li>
+                </ul>
+                <ul class="col-sm-6 col-md-2">
+                    <li>Community</li>
+                    <li>Tutorials</li>
+                    <li>Meetups</li>
+                    <li>Q&A</li>
+                    <li>Write for Donations</li>
+                    <li>Droplets for Demos</li>
+                    <li>Hatch Startup Program</li>
+                    <li>Shop Swag</li>
+                    <li>Research Program</li>
+                    <li>Currents Research</li>
+                    <li>Open Source</li>
+                </ul>
+                <ul class="col-sm-6 col-md-2">
+                    <li>Solutions</li>
+                    <li>Web & Mobile Apps</li>
+                    <li>Website Hosting</li>
+                    <li>Big Data</li>
+                    <li>Managed Services</li>
+                    <li>Business Solutions</li>
+                </ul>
+                <ul class="col-sm-12 col-md-2">
+                    <li>Contact</li>
+                    <li>Support</li>
+                    <li>Sales</li>
+                    <li>Report Abuse</li>
+                    <li>System Status</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="">
+                    <span>© 2020 DigitalOcean, LLC. All rights reserved.</span>
+                </div>
+                <div class="right">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
