@@ -223,6 +223,7 @@ h2 {
     padding-bottom: 30px;
 }
 
+
 .first_white li {
     list-style: none;
     border-left: 2px solid #e5e8ed;
@@ -271,12 +272,27 @@ h2 {
 
 .second_gray img {
     display: inline;
-    vertical-align: middle;
+
 }
+.carousel {
+    width: 80%;
+}
+
 
 .second_gray i {
     font-size: 24px;
+    display: inline-block;
 }
+
+.second_gray i:first-child {
+    margin-right: 5px;
+}
+
+.second_gray i:last-child {
+    margin-left: 5px;
+}
+
+
 
 .circles {
     margin-top: 20px;
@@ -494,12 +510,8 @@ footer .right i {
     }
 
     .my_list ul {
-        text-align: center;
         padding-left: 0;
         margin-bottom: 30px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .first_white li {
