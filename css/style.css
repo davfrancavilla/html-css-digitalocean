@@ -398,6 +398,18 @@ h2 {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.third_gray i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.third_gray i:first-of-type{
+    transform: translate(-121%,-50%);
 }
 
 .third_gray .review_box>img {
