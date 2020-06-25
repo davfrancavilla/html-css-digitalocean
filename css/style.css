@@ -6,6 +6,8 @@ body {
 
 .navbar-fixed-top {
     border-bottom: 1px solid #9fa8bc;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .my_bold {
@@ -59,7 +61,7 @@ nav img {
     background-color: #3a8aff;
 }
 
-.nav > li > a {
+.nav>li>a {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -74,7 +76,7 @@ nav button {
 .blue {
     background-color: #004aff;
     margin-top: 50px;
-    /* background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg'); */
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
     background-size: cover;
     background-position: center;
 }
@@ -96,9 +98,13 @@ nav button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    padding-left: 15px;
 }
 
-
+.my_jumbotron .right {
+    float: right;
+    padding-right: 15px;
+}
 
 .form_container {
     padding: 20px;
@@ -126,6 +132,7 @@ nav button {
 
 .my_form {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .my_form .form-control {
@@ -139,9 +146,9 @@ nav button {
 }
 
 .my_form>span {
-    width: 65%;
+    width: 100%;
     position: absolute;
-    top: 100%;
+    top: 101%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -223,7 +230,6 @@ h2 {
     padding-bottom: 30px;
 }
 
-
 .first_white li {
     list-style: none;
     border-left: 2px solid #e5e8ed;
@@ -272,12 +278,11 @@ h2 {
 
 .second_gray img {
     display: inline;
-
 }
+
 .carousel {
     width: 80%;
 }
-
 
 .second_gray i {
     font-size: 24px;
@@ -291,8 +296,6 @@ h2 {
 .second_gray i:last-child {
     margin-left: 5px;
 }
-
-
 
 .circles {
     margin-top: 20px;
@@ -334,7 +337,6 @@ h2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
 }
 
 .world_map .container {
@@ -361,9 +363,6 @@ h2 {
     border-bottom: 1px solid #8c97ae;
 }
 
-
-
-
 .sigla {
     width: 10%;
     font-weight: 700;
@@ -377,7 +376,6 @@ h2 {
 .world_map .cell div {
     display: inline-block;
 }
-
 
 .world_map .link {
     width: 28%;
@@ -408,8 +406,8 @@ h2 {
     transform: translateY(-50%);
 }
 
-.third_gray i:first-of-type{
-    transform: translate(-121%,-50%);
+.third_gray i:first-of-type {
+    transform: translate(-121%, -50%);
 }
 
 .third_gray .review_box>img {
@@ -432,7 +430,6 @@ h2 {
 }
 
 /* SEZIONE BLU GET STARTED */
-
 #get_started {
     background-image: url('https://images.prismic.io/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg?auto=compress,format');
     background-size: cover;
@@ -512,13 +509,9 @@ footer .right i {
     margin-left: 8px;
 }
 
-
-
 @media screen and (max-width: 767px) {
-
     .mobile_view {
-        margin: 0 auto;
-        padding-bottom: 90px;
+        padding-bottom: 70px;
     }
 
     .my_list ul {
@@ -571,19 +564,21 @@ footer .right i {
         position: static;
     }
 
-    .my_jumbotron .text_section{
+    .my_jumbotron .text_section {
         position: static;
         margin: 0 auto;
         width: 80%;
         text-align: center;
     }
 
-
-
+    .my_jumbotron .right {
+        float: none;
+        margin: auto;
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 360px) {
-
     .world_map .cell {
         font-size: 10px;
     }
