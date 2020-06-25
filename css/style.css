@@ -87,20 +87,18 @@ nav button {
 .my_jumbotron {
     margin-top: 100px;
     margin-bottom: 150px;
+    position: relative;
 }
 
 .text_section {
     color: white;
-}
-
-.relative_container {
-    height: 100%;
-    position: relative;
-}
-
-.absolute_container {
+    width: 40%;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+
 
 .form_container {
     padding: 20px;
@@ -547,6 +545,13 @@ footer .right i {
     footer .right {
         text-align: center;
         position: static;
+    }
+
+    .my_jumbotron .text_section{
+        position: static;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
     }
 
 
